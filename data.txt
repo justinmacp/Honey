@@ -1,1 +1,9 @@
-{"review": [{"rating": "5", "sentence": "I is the by who builds the boat"},{"rating": "5", "sentence": "I is the by who sails her."},{"rating": "4", "sentence": "What the hell!"},{"rating": "3", "sentence": "yeah great book eh?"},{"rating": "3", "sentence": "I is the by, who builds the ship"},{"rating": "1", "sentence": "Harry Potter, was a great book"}]}
+{"review": [
+    {"rating": "4", "sentence": "Much the way Curtis Sittenfeld dug deep into the psyche of a fictionalized version of Laura Bush, in her great novel “American Wife,” so Montemarano has humanized the Edwards story, allowing us to look far inside at people who had seemed merely to be supporting actors in the larger drama."},
+    {"rating": "4", "sentence": "But while Sittenfeld’s novel was a tour-de-force study of one person, Montemarano shifts from character to character, addressing events in the round so we can experience the full extent of the havoc the senator has wrought."},
+    {"rating": "1", "sentence": "The book skips around in time and point of view, so you have to pay close attention to where you are and who you are with."},
+    {"rating": "5", "sentence": "It’s hard to look so deeply into other people’s lives that you really understand them, except perhaps through fiction, and that is what Montemarano has done here, with deftness and subtlety."},
+    {"rating": "3", "sentence": "At heart the book is about the damage done to children by adults."},
+    {"rating": "3", "sentence": "“The Senator’s Children” is at its most moving in its final chapter, which takes place in 1977 and is written from the point of view of Nick, the senator’s son, who will go on to die seven years later."},
+    {"rating": "2", "sentence": "It’s a glimpse into what this shattered family looked like when it was intact, and a poignant reminder that a short life is every bit as meaningful as a long one."}]
+}
