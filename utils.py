@@ -176,7 +176,7 @@ def wordbias(wordlist1,wordlist2,wordlist3,wordlist4,wordlist5):    #function to
         threshold3 = threshold*total_probability[word] > probability_given_3[word] or (1./threshold*total_probability[word]) < probability_given_3[word]
         threshold4 = threshold*total_probability[word] > probability_given_4[word] or (1./threshold*total_probability[word]) < probability_given_4[word]
         threshold5 = threshold*total_probability[word] > probability_given_5[word] or (1./threshold*total_probability[word]) < probability_given_5[word]
-        if threshold1 and threshold2 and threshold3 and threshold4 and threshold5 and probability_given_5[word] != 0 and probability_given_4[word] != 0 and probability_given_3[word] != 0 and probability_given_2[word] != 0 and probability_given_1[word] != 0: #if the word is dependent on the ranking
+        if threshold1 and threshold2 and threshold3 and threshold4 and threshold5 and (probability_given_2[word] != 0 or probability_given_1[word] != 0): #if the word is dependent on the ranking
             dependent_words[word] = (2.*probability_given_5[word]+probability_given_4[word])/(probability_given_2[word]+2.*probability_given_1[word])
         #add the word to the dependent word dictionary with value:  2*P('w'|5)+1*P('w'|4)
         #                                                           ---------------------
