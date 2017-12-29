@@ -221,8 +221,8 @@ def sentence_cleanup(sentence):                     #function to extract the wor
                 if not (newstring[len(newstring)-1].isalnum()): #if third last char is a symbol
                     newstring = newstring[:len(newstring)-1]    #remove it
 
-        wordlist[i] = newstring #replace word from list with the cleaned up string
-    return wordlist         #return the wordlist
+        wordlist[i] = newstring.lower() #replace word from list with the cleaned up string in lowercase
+    return wordlist                     #return the wordlist
 
 
 
