@@ -183,6 +183,9 @@ def sentence_filter(inpath, outpath, dictpath):                     #function to
     indep_sentences = list()                                        #to remember the independent sentencea
     for i in range(len(data['review'])):                            #FOR LOOP (1): go though all sentences in that file
         contains_dep = False                                        #boolean variable indicating wheither or not a sentence contains a dependent word
+        data['review'][i]['sentence'] = data['review'][i]['sentence'].replace(u'\u201c','"')         #remove non ascii open quotation marks
+        data['review'][i]['sentence'] = data['review'][i]['sentence'].replace(u'\u201d','"')         #remove non ascii close quotation marks
+        data['review'][i]['sentence'] = data['review'][i]['sentence'].replace(u'\u2019','\'')
         wordlist = sentence_cleanup(data['review'][i]['sentence'])  #extract words in a list for each of those sentences
         for word in wordlist:                                       #FOR LOOP (2): go though each of those words
             for dep_word in dep_dict:                               #FOR LOOP (3): go through the list of dependent words given in the function call
