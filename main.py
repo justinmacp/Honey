@@ -16,4 +16,4 @@ sentence_filter('Preprocessing/Test_Data/data.txt','Preprocessing/Results/dataou
 '''
     Post processing: employing the GloVe algorithm
 '''
-fill_co_occurrence_matrix('Preprocessing/Results/dataout.json','Postprocessing/cooccur.json')
+CC_mat, decoding_list = fill_co_occurrence_matrix('Preprocessing/Results/dataout.json','Postprocessing/cooccur.json')
